@@ -1,4 +1,4 @@
-@parabank_login
+@appcontact_login
 Feature: Login to Parabank
 
   Background:
@@ -6,24 +6,21 @@ Feature: Login to Parabank
     * header Accept = 'application/json'
 
   Scenario: Customer Login
-    Given path 'login'
+    Given path '/users/login'
     And path 'john' //userName
     And path 'demo' //password
     When method GET
     Then status 200
     And match response ==
     """
-    {
-       "id": '#number',
-       "firstName": '#string',
-       "lastName": '#string',
-       "address": {
-            "street": '#string',
-            "city": '#string',
-            "state": '#string',
-            "zipCode": '#string'
-        },
-       "phoneNumber": '#string',
-       "ssn": '#string'
-    }
+{
+    "user": {
+        "_id": "#number",
+        "firstName": "#string",
+        "lastName": "#string",
+        "email": "#string",
+        "__v": "#number",
+    },
+    "token": "#string"
+}
     """
