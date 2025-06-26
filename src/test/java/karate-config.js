@@ -7,7 +7,7 @@ function fn() {
     var server = '192.168.0.182:8080';
     if (karate.env == 'prod') {
         protocol = 'https';
-        server = 'parabank.parasoft.com';
+        server = 'https://thinking-tester-contact-list.herokuapp.com';
     }
 
     var config = {
