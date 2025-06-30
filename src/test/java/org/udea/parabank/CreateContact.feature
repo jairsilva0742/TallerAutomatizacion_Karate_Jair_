@@ -7,7 +7,7 @@ Feature: create contact to app contact
 Scenario: Login y crear contacto
   # Login
   Given path '/users/login'
-  And request { "email": "pruebasudea@test.com", "password": "12345678" }
+  And request { "email": "PuebaSoftware@gmail.com", "password": "123456789" }
   When method POST
   Then status 200
   * def authToken = response.token
