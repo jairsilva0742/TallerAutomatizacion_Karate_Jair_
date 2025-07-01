@@ -7,7 +7,7 @@ Feature: Login to app contact
  
   Scenario: Login exitoso con credenciales válidas
     Given path '/users/login'
-    And request { "email": "PruebaSoftware2@gmail.com", "password": "123456789" }
+    And request { "email": "PruebaSoftware3@gmail.com", "password": "123456789" }
     When method POST
     Then status 200
     And match response.token == '#present'
