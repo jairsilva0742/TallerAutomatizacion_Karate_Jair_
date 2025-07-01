@@ -1,0 +1,56 @@
+name: Maven Build and Karate Test
+
+on:
+  push:
+    branches: main
+
+permissions:
+  contents: write
+  checks: write
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up JDK 8
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '8'
+
+      - name: Run Karate Tests
+        run: mvn clean test -Dtest=TestRunner "-Dkarate.env=prod" -Dmaven.test.failure.ignore=true
+
+      - name: Publish Test Report
+        uses: mikepenz/action-junit-report@v5
+        if: success() || failure()
+        with:
+          report_paths: '**/surefire-reports/TEST-*.xml'
+
+      - name: Copy Karate HTML report to repo
+        run: |
+          rm -rf doc
+          mkdir -p doc
+          cp -r target/karate-reports doc/
+
+      - name: Commit and push report to repo
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git reset --soft origin/main
+          git add doc/karate-reports
+          git commit -m "Update Karate HTML report" || echo "No changes to commit"
+          git push origin main
+
+      - name: Upload Karate HTML Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: karate-html-report
+          path: target/karate-reports
