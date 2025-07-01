@@ -6,7 +6,7 @@ Feature: create contact to app contact
     
   Scenario: Login, crear contacto y validar existencia
     Given path '/users/login'
-    And request { "email": "PruebasSoftware3@gmail.com", "password": "123456789" }
+    And request { "email": "PruebaSoftware3@gmail.com", "password": "123456789" }
     When method POST
     Then status 200
     * def authToken = response.token
@@ -26,7 +26,7 @@ Feature: create contact to app contact
 
   Scenario: Crear contacto con campos faltantes
     Given path '/users/login'
-    And request { "email": "PruebasSoftware3@gmail.com", "password": "123456789" }
+    And request { "email": "PruebaSoftware3@gmail.com", "password": "123456789" }
     When method POST
     Then status 200
     * def authToken = response.token
