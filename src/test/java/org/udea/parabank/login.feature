@@ -4,7 +4,7 @@ Feature: Login to app contact
   Background:
     * url baseUrl   
     * header Accept = 'application/json'
-   
+ 
   Scenario: Login exitoso con credenciales válidas
     Given path '/users/login'
     And request { "email": "PruebaSoftware3@gmail.com", "password": "123456789" }
