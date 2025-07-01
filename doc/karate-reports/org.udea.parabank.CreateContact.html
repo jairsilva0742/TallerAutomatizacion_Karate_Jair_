@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("820dd875-0e0f-46a4-9107-6f5e65ca844c",{name:"runner"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>org.udea.parabank.CreateContact</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div>prod</div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-07-01 02:03:11 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>Login, crear contacto y validar existencia</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:27]"><span>[2:27]</span> <span>Crear contacto con campos faltantes</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">org/udea/parabank/CreateContact.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">create contact to app contact</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">Login, crear contacto y validar existencia</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>924</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/users/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { &quot;email&quot;: &quot;PruebaSoftware3@gmail.com&quot;, &quot;password&quot;: &quot;123456789&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">317</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">02:03:09.513 request:
+1 &gt; POST https://thinking-tester-contact-list.herokuapp.com/users/login
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 60
+1 &gt; Host: thinking-tester-contact-list.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_452)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;PruebaSoftware3@gmail.com&quot;,&quot;password&quot;:&quot;123456789&quot;}
+
+02:03:09.829 response time in milliseconds: 315
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1751335389&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=JhWbJdPjhTDEg%2BVGUhTfTUwIjHSjfAk3EFtT8L9drqE%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1751335389&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=JhWbJdPjhTDEg%2BVGUhTfTUwIjHSjfAk3EFtT8L9drqE%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODYzMzdiOTk4YmVkZjAwMTUwZjE5MjMiLCJpYXQiOjE3NTEzMzUzODl9.WN3SVUZCcYLtbLKcMiZLCZZLRLjqqTVhAzSwvqKgnjI; Max-Age=36000; Path=/; Expires=Tue, 01 Jul 2025 12:03:09 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 286
+1 &lt; Etag: W/&quot;11e-l5RMVJh3jSjnoW4XVC2iyfVdWKo&quot;
+1 &lt; Date: Tue, 01 Jul 2025 02:03:09 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;user&quot;:{&quot;_id&quot;:&quot;686337b998bedf00150f1923&quot;,&quot;firstName&quot;:&quot;Jair&quot;,&quot;lastName&quot;:&quot;Silva&quot;,&quot;email&quot;:&quot;pruebasoftware3@gmail.com&quot;,&quot;__v&quot;:24},&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODYzMzdiOTk4YmVkZjAwMTUwZjE5MjMiLCJpYXQiOjE3NTEzMzUzODl9.WN3SVUZCcYLtbLKcMiZLCZZLRLjqqTVhAzSwvqKgnjI&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomEmail = &#39;testcontact&#39; + java.util.UUID.randomUUID() + &#39;@hotmail.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/contacts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { &quot;firstName&quot;: &quot;Juan&quot;, &quot;lastName&quot;: &quot;Silva&quot;, &quot;birthdate&quot;: &quot;1990-01-01&quot;, &quot;email&quot;:&quot;#(randomEmail)&quot;, &quot;phone&quot;: &quot;8005555555&quot;, &quot;street1&quot;: &quot;1 Main St.&quot;, &quot;street2&quot;: &quot;Apartment A&quot;, &quot;city&quot;: &quot;Anytown&quot;, &quot;stateProvince&quot;: &quot;KS&quot;, &quot;postalCode&quot;: &quot;12345&quot;, &quot;country&quot;: &quot;USA&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">295</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">02:03:09.850 request:
+2 &gt; POST https://thinking-tester-contact-list.herokuapp.com/contacts
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODYzMzdiOTk4YmVkZjAwMTUwZjE5MjMiLCJpYXQiOjE3NTEzMzUzODl9.WN3SVUZCcYLtbLKcMiZLCZZLRLjqqTVhAzSwvqKgnjI
+2 &gt; Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODYzMzdiOTk4YmVkZjAwMTUwZjE5MjMiLCJpYXQiOjE3NTEzMzUzODl9.WN3SVUZCcYLtbLKcMiZLCZZLRLjqqTVhAzSwvqKgnjI
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 277
+2 &gt; Host: thinking-tester-contact-list.herokuapp.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_452)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;firstName&quot;:&quot;Juan&quot;,&quot;lastName&quot;:&quot;Silva&quot;,&quot;birthdate&quot;:&quot;1990-01-01&quot;,&quot;email&quot;:&quot;testcontact641000ec-5ce5-438e-807b-1977890eaa57@hotmail.com&quot;,&quot;phone&quot;:&quot;8005555555&quot;,&quot;street1&quot;:&quot;1 Main St.&quot;,&quot;street2&quot;:&quot;Apartment A&quot;,&quot;city&quot;:&quot;Anytown&quot;,&quot;stateProvince&quot;:&quot;KS&quot;,&quot;postalCode&quot;:&quot;12345&quot;,&quot;country&quot;:&quot;USA&quot;}
+
+02:03:10.143 response time in milliseconds: 292
+2 &lt; 201
+2 &lt; Server: Cowboy
+2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1751335390&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=gzLc2pre%2FMM9w9swod3YQdZCU40HWxt2AwlG9X6q1o4%3D&quot;}]}
+2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1751335390&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=gzLc2pre%2FMM9w9swod3YQdZCU40HWxt2AwlG9X6q1o4%3D
+2 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 353
+2 &lt; Etag: W/&quot;161-w8jM71JqRsvUpmaQ3qr0Vkxvk9Y&quot;
+2 &lt; Date: Tue, 01 Jul 2025 02:03:10 GMT
+2 &lt; Via: 1.1 vegur
+{&quot;_id&quot;:&quot;686341de85d38900153651c5&quot;,&quot;firstName&quot;:&quot;Juan&quot;,&quot;lastName&quot;:&quot;Silva&quot;,&quot;birthdate&quot;:&quot;1990-01-01&quot;,&quot;email&quot;:&quot;testcontact641000ec-5ce5-438e-807b-1977890eaa57@hotmail.com&quot;,&quot;phone&quot;:&quot;8005555555&quot;,&quot;street1&quot;:&quot;1 Main St.&quot;,&quot;street2&quot;:&quot;Apartment A&quot;,&quot;city&quot;:&quot;Anytown&quot;,&quot;stateProvince&quot;:&quot;KS&quot;,&quot;postalCode&quot;:&quot;12345&quot;,&quot;country&quot;:&quot;USA&quot;,&quot;owner&quot;:&quot;686337b998bedf00150f1923&quot;,&quot;__v&quot;:0}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/contacts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">290</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">02:03:10.145 request:
+3 &gt; GET https://thinking-tester-contact-list.herokuapp.com/contacts
+3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODYzMzdiOTk4YmVkZjAwMTUwZjE5MjMiLCJpYXQiOjE3NTEzMzUzODl9.WN3SVUZCcYLtbLKcMiZLCZZLRLjqqTVhAzSwvqKgnjI
+3 &gt; Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODYzMzdiOTk4YmVkZjAwMTUwZjE5MjMiLCJpYXQiOjE3NTEzMzUzODl9.WN3SVUZCcYLtbLKcMiZLCZZLRLjqqTVhAzSwvqKgnjI
+3 &gt; Host: thinking-tester-contact-list.herokuapp.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_452)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+02:03:10.433 response time in milliseconds: 287
+3 &lt; 200
+3 &lt; Server: Cowboy
+3 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1751335390&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=gzLc2pre%2FMM9w9swod3YQdZCU40HWxt2AwlG9X6q1o4%3D&quot;}]}
+3 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1751335390&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=gzLc2pre%2FMM9w9swod3YQdZCU40HWxt2AwlG9X6q1o4%3D
+3 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+3 &lt; Connection: keep-alive
+3 &lt; X-Powered-By: Express
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; Content-Length: 4355
+3 &lt; Etag: W/&quot;1103-qEAWLjZx9wiCR9SQpgfITc/33/o&quot;
+3 &lt; Date: Tue, 01 Jul 2025 02:03:10 GMT
+3 &lt; Via: 1.1 vegur
+[{&quot;_id&quot;:&quot;686337f498bedf00150f1935&quot;,&quot;firstName&quot;:&quot;Jaime&quot;,&quot;lastName&quot;:&quot;Gomez&quot;,&quot;birthdate&quot;:&quot;1920-03-15&quot;,&quot;email&quot;:&quot;jaimr.gomez@gmail.com&quot;,&quot;phone&quot;:&quot;8007654321&quot;,&quot;street1&quot;:&quot;Carrera 7&quot;,&quot;street2&quot;:&quot;Oficina 4&quot;,&quot;city&quot;:&quot;Bogot�&quot;,&quot;stateProvince&quot;:&quot;Distrito Capital&quot;,&quot;postalCode&quot;:&quot;030021&quot;,&quot;country&quot;:&quot;Colombia&quot;,&quot;owner&quot;:&quot;686337b998bedf00150f1923&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;6863380885d3890015365199&quot;,&quot;firstName&quot;:&quot;Jaime&quot;,&quot;lastName&quot;:&quot;Gomez&quot;,&quot;birthdate&quot;:&quot;1920-03-15&quot;,&quot;email&quot;:&quot;jaimr.gomez@gmail.com&quot;,&quot;phone&quot;:&quot;8007654321&quot;,&quot;street1&quot;:&quot;Carrera 7&quot;,&quot;street2&quot;:&quot;Oficina 4&quot;,&quot;city&quot;:&quot;Bogot�&quot;,&quot;stateProvince&quot;:&quot;Distrito Capital&quot;,&quot;postalCode&quot;:&quot;030021&quot;,&quot;country&quot;:&quot;Colombia&quot;,&quot;owner&quot;:&quot;686337b998bedf00150f1923&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;686337ef85d3890015365192&quot;,&quot;firstName&quot;:&quot;Maria&quot;,&quot;lastName&quot;:&quot;Gomez&quot;,&quot;birthdate&quot;:&quot;1975-03-22&quot;,&quot;email&quot;:&quot;maria.gomez@example.com&quot;,&quot;phone&quot;:&quot;8007654321&quot;,&quot;street1&quot;:&quot;Carrera 7&quot;,&quot;street2&quot;:&quot;Oficina 3&quot;,&quot;city&quot;:&quot;Medell�n&quot;,&quot;stateProvince&quot;:&quot;Antioquia&quot;,&quot;postalCode&quot;:&quot;050021&quot;,&quot;country&quot;:&quot;Colombia&quot;,&quot;owner&quot;:&quot;686337b998bedf00150f1923&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;6863380385d3890015365197&quot;,&quot;firstName&quot;:&quot;Maria&quot;,&quot;lastName&quot;:&quot;Gomez&quot;,&quot;birthdate&quot;:&quot;1975-03-22&quot;,&quot;email&quot;:&quot;maria.gomez@example.com&quot;,&quot;phone&quot;:&quot;8007654321&quot;,&quot;street1&quot;:&quot;Carrera 7&quot;,&quot;street2&quot;:&quot;Oficina 3&quot;,&quot;city&quot;:&quot;Medell�n&quot;,&quot;stateProvince&quot;:&quot;Antioquia&quot;,&quot;postalCode&quot;:&quot;050021&quot;,&quot;country&quot;:&quot;Colombia&quot;,&quot;owner&quot;:&quot;686337b998bedf00150f1923&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;6863381785d389001536519e&quot;,&quot;firstName&quot;:&quot;Maria&quot;,&quot;lastName&quot;:&quot;Gomez&quot;,&quot;birthdate&quot;:&quot;1975-03-22&quot;,&quot;email&quot;:&quot;maria.gomez@example.com&quot;,&quot;phone&quot;:&quot;8007654321&quot;,&quot;street1&quot;:&quot;Carrera 7&quot;,&quot;street2&quot;:&quot;Oficina 3&quot;,&quot;city&quot;:&quot;Medell�n&quot;,&quot;stateProvince&quot;:&quot;Antioquia&quot;,&quot;postalCode&quot;:&quot;050021&quot;,&quot;country&quot;:&quot;Colombia&quot;,&quot;owner&quot;:&quot;686337b998bedf00150f1923&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;686337ea98bedf00150f1932&quot;,&quot;firstName&quot;:&quot;Juan&quot;,&quot;lastName&quot;:&quot;Perez&quot;,&quot;birthdate&quot;:&quot;1980-05-12&quot;,&quot;email&quot;:&quot;juan.perez@example.com&quot;,&quot;phone&quot;:&quot;8001234567&quot;,&quot;street1&quot;:&quot;Calle 1&quot;,&quot;street2&quot;:&quot;Apto 2&quot;,&quot;city&quot;:&quot;Bogot�&quot;,&quot;stateProvince&quot;:&quot;DC&quot;,&quot;postalCode&quot;:&quot;110111&quot;,&quot;country&quot;:&quot;Colombia&quot;,&quot;owner&quot;:&quot;686337b998bedf00150f1923&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;686337fe98bedf00150f1937&quot;,&quot;firstName&quot;:&quot;Juan&quot;,&quot;lastName&quot;:&quot;Perez&quot;,&quot;birthdate&quot;:&quot;1980-05-12&quot;,&quot;email&quot;:&quot;juan.perez@example.com&quot;,&quot;phone&quot;:&quot;8001234567&quot;,&quot;street1&quot;:&quot;Calle 1&quot;,&quot;street2&quot;:&quot;Apto 2&quot;,&quot;city&quot;:&quot;Bogot�&quot;,&quot;stateProvince&quot;:&quot;DC&quot;,&quot;postalCode&quot;:&quot;110111&quot;,&quot;country&quot;:&quot;Colombia&quot;,&quot;owner&quot;:&quot;686337b998bedf00150f1923&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;6863381285d389001536519d&quot;,&quot;firstName&quot;:&quot;Juan&quot;,&quot;lastName&quot;:&quot;Perez&quot;,&quot;birthdate&quot;:&quot;1980-05-12&quot;,&quot;email&quot;:&quot;juan.perez@example.com&quot;,&quot;phone&quot;:&quot;8001234567&quot;,&quot;street1&quot;:&quot;Calle 1&quot;,&quot;street2&quot;:&quot;Apto 2&quot;,&quot;city&quot;:&quot;Bogot�&quot;,&quot;stateProvince&quot;:&quot;DC&quot;,&quot;postalCode&quot;:&quot;110111&quot;,&quot;country&quot;:&quot;Colombia&quot;,&quot;owner&quot;:&quot;686337b998bedf00150f1923&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;68633ecd98bedf00150f1961&quot;,&quot;firstName&quot;:&quot;Juan&quot;,&quot;lastName&quot;:&quot;Silva&quot;,&quot;birthdate&quot;:&quot;1990-01-01&quot;,&quot;email&quot;:&quot;testcontact659a52ef-056a-4421-86bc-59c463f93fb3@hotmail.com&quot;,&quot;phone&quot;:&quot;8005555555&quot;,&quot;street1&quot;:&quot;1 Main St.&quot;,&quot;street2&quot;:&quot;Apartment A&quot;,&quot;city&quot;:&quot;Anytown&quot;,&quot;stateProvince&quot;:&quot;KS&quot;,&quot;postalCode&quot;:&quot;12345&quot;,&quot;country&quot;:&quot;USA&quot;,&quot;owner&quot;:&quot;686337b998bedf00150f1923&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;6863416198bedf00150f196e&quot;,&quot;firstName&quot;:&quot;Juan&quot;,&quot;lastName&quot;:&quot;Silva&quot;,&quot;birthdate&quot;:&quot;1990-01-01&quot;,&quot;email&quot;:&quot;testcontactda3d47b7-9211-4575-bacd-17483b97ca7c@hotmail.com&quot;,&quot;phone&quot;:&quot;8005555555&quot;,&quot;street1&quot;:&quot;1 Main St.&quot;,&quot;street2&quot;:&quot;Apartment A&quot;,&quot;city&quot;:&quot;Anytown&quot;,&quot;stateProvince&quot;:&quot;KS&quot;,&quot;postalCode&quot;:&quot;12345&quot;,&quot;country&quot;:&quot;USA&quot;,&quot;owner&quot;:&quot;686337b998bedf00150f1923&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;686341de85d38900153651c5&quot;,&quot;firstName&quot;:&quot;Juan&quot;,&quot;lastName&quot;:&quot;Silva&quot;,&quot;birthdate&quot;:&quot;1990-01-01&quot;,&quot;email&quot;:&quot;testcontact641000ec-5ce5-438e-807b-1977890eaa57@hotmail.com&quot;,&quot;phone&quot;:&quot;8005555555&quot;,&quot;street1&quot;:&quot;1 Main St.&quot;,&quot;street2&quot;:&quot;Apartment A&quot;,&quot;city&quot;:&quot;Anytown&quot;,&quot;stateProvince&quot;:&quot;KS&quot;,&quot;postalCode&quot;:&quot;12345&quot;,&quot;country&quot;:&quot;USA&quot;,&quot;owner&quot;:&quot;686337b998bedf00150f1923&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;686337f985d3890015365194&quot;,&quot;firstName&quot;:&quot;Carlos&quot;,&quot;lastName&quot;:&quot;Thola&quot;,&quot;birthdate&quot;:&quot;1940-03-05&quot;,&quot;email&quot;:&quot;carlos.thola@gmail.com&quot;,&quot;phone&quot;:&quot;15048923&quot;,&quot;street1&quot;:&quot;Carrera 1 4-5&quot;,&quot;street2&quot;:&quot;Oficina 14&quot;,&quot;city&quot;:&quot;Bogot�&quot;,&quot;stateProvince&quot;:&quot;Distrito Capital&quot;,&quot;postalCode&quot;:&quot;08991&quot;,&quot;country&quot;:&quot;Colombia&quot;,&quot;owner&quot;:&quot;686337b998bedf00150f1923&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;6863380d85d389001536519b&quot;,&quot;firstName&quot;:&quot;Carlos&quot;,&quot;lastName&quot;:&quot;Thola&quot;,&quot;birthdate&quot;:&quot;1940-03-05&quot;,&quot;email&quot;:&quot;carlos.thola@gmail.com&quot;,&quot;phone&quot;:&quot;15048923&quot;,&quot;street1&quot;:&quot;Carrera 1 4-5&quot;,&quot;street2&quot;:&quot;Oficina 14&quot;,&quot;city&quot;:&quot;Bogot�&quot;,&quot;stateProvince&quot;:&quot;Distrito Capital&quot;,&quot;postalCode&quot;:&quot;08991&quot;,&quot;country&quot;:&quot;Colombia&quot;,&quot;owner&quot;:&quot;686337b998bedf00150f1923&quot;,&quot;__v&quot;:0}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response..email contains randomEmail</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:27]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:27]</span>
+                <span class="scenario-name">Crear contacto con campos faltantes</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>598</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:27]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/users/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { &quot;email&quot;: &quot;PruebaSoftware3@gmail.com&quot;, &quot;password&quot;: &quot;123456789&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">311</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.30">02:03:10.444 request:
+1 &gt; POST https://thinking-tester-contact-list.herokuapp.com/users/login
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 60
+1 &gt; Host: thinking-tester-contact-list.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_452)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;PruebaSoftware3@gmail.com&quot;,&quot;password&quot;:&quot;123456789&quot;}
+
+02:03:10.753 response time in milliseconds: 308
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1751335390&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=gzLc2pre%2FMM9w9swod3YQdZCU40HWxt2AwlG9X6q1o4%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1751335390&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=gzLc2pre%2FMM9w9swod3YQdZCU40HWxt2AwlG9X6q1o4%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODYzMzdiOTk4YmVkZjAwMTUwZjE5MjMiLCJpYXQiOjE3NTEzMzUzOTB9.kxcIq1qCyE9YbCEJwuiPYT2TI7x6ZUDIFZZK8XJL-Jg; Max-Age=36000; Path=/; Expires=Tue, 01 Jul 2025 12:03:10 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 286
+1 &lt; Etag: W/&quot;11e-OT+GPs3A1HJUauhp1Cu4LT6JVsc&quot;
+1 &lt; Date: Tue, 01 Jul 2025 02:03:10 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;user&quot;:{&quot;_id&quot;:&quot;686337b998bedf00150f1923&quot;,&quot;firstName&quot;:&quot;Jair&quot;,&quot;lastName&quot;:&quot;Silva&quot;,&quot;email&quot;:&quot;pruebasoftware3@gmail.com&quot;,&quot;__v&quot;:25},&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODYzMzdiOTk4YmVkZjAwMTUwZjE5MjMiLCJpYXQiOjE3NTEzMzUzOTB9.kxcIq1qCyE9YbCEJwuiPYT2TI7x6ZUDIFZZK8XJL-Jg&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/contacts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { &quot;lastName&quot;: &quot;SinNombre&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">286</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.37">02:03:10.756 request:
+2 &gt; POST https://thinking-tester-contact-list.herokuapp.com/contacts
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODYzMzdiOTk4YmVkZjAwMTUwZjE5MjMiLCJpYXQiOjE3NTEzMzUzOTB9.kxcIq1qCyE9YbCEJwuiPYT2TI7x6ZUDIFZZK8XJL-Jg
+2 &gt; Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODYzMzdiOTk4YmVkZjAwMTUwZjE5MjMiLCJpYXQiOjE3NTEzMzUzOTB9.kxcIq1qCyE9YbCEJwuiPYT2TI7x6ZUDIFZZK8XJL-Jg
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 24
+2 &gt; Host: thinking-tester-contact-list.herokuapp.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_452)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;lastName&quot;:&quot;SinNombre&quot;}
+
+02:03:11.040 response time in milliseconds: 283
+2 &lt; 400
+2 &lt; Server: Cowboy
+2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1751335390&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=gzLc2pre%2FMM9w9swod3YQdZCU40HWxt2AwlG9X6q1o4%3D&quot;}]}
+2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1751335390&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=gzLc2pre%2FMM9w9swod3YQdZCU40HWxt2AwlG9X6q1o4%3D
+2 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 342
+2 &lt; Etag: W/&quot;156-SdwRjRz+JuEZO11uX75/Ayc9Ueg&quot;
+2 &lt; Date: Tue, 01 Jul 2025 02:03:11 GMT
+2 &lt; Via: 1.1 vegur
+{&quot;errors&quot;:{&quot;firstName&quot;:{&quot;name&quot;:&quot;ValidatorError&quot;,&quot;message&quot;:&quot;Path `firstName` is required.&quot;,&quot;properties&quot;:{&quot;message&quot;:&quot;Path `firstName` is required.&quot;,&quot;type&quot;:&quot;required&quot;,&quot;path&quot;:&quot;firstName&quot;},&quot;kind&quot;:&quot;required&quot;,&quot;path&quot;:&quot;firstName&quot;}},&quot;_message&quot;:&quot;Contact validation failed&quot;,&quot;message&quot;:&quot;Contact validation failed: firstName: Path `firstName` is required.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
